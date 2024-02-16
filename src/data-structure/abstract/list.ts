@@ -16,4 +16,6 @@ export interface List<T> {
   search(value: T): number;
 
   get(index: number): T;
+
+  getAll(): T[];
 }
