@@ -7,3 +7,9 @@ export interface Queue<T> {
 
   isEmpty(): boolean;
 }
+
+export interface DoubleEndedQueue<T> extends Queue<T> {
+  enqueueFront(value: T): void;
+
+  dequeueBack(): T;
+}
